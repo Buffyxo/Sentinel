@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../../Installer/Sentinel.Installer/Sentinel.Installer.wixproj" Type="b7dd6f7e-def8-4e67-b5b7-07ef123db6f0" Id="d8f18e7b-ceba-44b8-80cf-af817af15720">
+    <Platform Solution="*|Any CPU" Project="x64" />
+  </Project>
+  <Project Path="Sentinel.csproj" />
+</Solution>

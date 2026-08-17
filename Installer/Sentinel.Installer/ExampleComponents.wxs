@@ -1,0 +1,9 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+	 <Files Include="$(Sentinel.TargetDir)\**" Directory="INSTALLFOLDER">
+	  <Exclude Files="$(Sentinel.TargetDir)\**\*.pdb" />
+	 </Files>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
