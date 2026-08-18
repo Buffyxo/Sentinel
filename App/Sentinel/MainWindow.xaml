@@ -37,7 +37,7 @@
 
                         <StackPanel Margin="25,0">
 
-                            <TextBlock x:Name="TotalDevicesText"
+                            <TextBlock Text="{Binding TotalDevices}"
                                        FontSize="28"
                                        HorizontalAlignment="Center"/>
 
@@ -47,7 +47,7 @@
 
                         <StackPanel Margin="25,0">
 
-                            <TextBlock x:Name="OnlineDevicesText"
+                            <TextBlock Text="{Binding OnlineDevices}"
                                        FontSize="28"
                                        HorizontalAlignment="Center"/>
 
@@ -57,7 +57,7 @@
 
                         <StackPanel Margin="25,0">
 
-                            <TextBlock x:Name="AlertCountText"
+                            <TextBlock Text="{Binding OnlineDevices}"
                                        FontSize="28"
                                        HorizontalAlignment="Center"/>
 
@@ -84,7 +84,7 @@
                    FontWeight="Bold"
                    Margin="0,0,0,15"/>
 
-                    <ItemsControl x:Name="DeviceList">
+                    <ItemsControl ItemsSource="{Binding Devices}">
 
                         <ItemsControl.ItemTemplate>
 
@@ -144,7 +144,7 @@
                         <TextBlock Grid.Column="0"
                                    Text="Temperature"/>
 
-                        <TextBlock x:Name="TemperatureText"
+                        <TextBlock Text="{Binding Environment.Temperature}"
                                    Grid.Column="1"/>
 
                     </Grid>
@@ -162,7 +162,7 @@
                         <TextBlock Grid.Column="0"
                                    Text="Humidity"/>
 
-                        <TextBlock x:Name="HumidityText"
+                        <TextBlock Text="{Binding Environment.Humidity}"
                                    Grid.Column="1"/>
 
                     </Grid>
@@ -178,7 +178,7 @@
            FontWeight="Bold"
            Margin="0,0,0,15"/>
 
-            <ItemsControl x:Name="AlertList">
+            <ItemsControl ItemsSource="{Binding Alerts}">
 
                 <ItemsControl.ItemTemplate>
 
