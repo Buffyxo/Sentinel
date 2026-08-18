@@ -144,7 +144,7 @@
                         <TextBlock Grid.Column="0"
                                    Text="Temperature"/>
 
-                        <TextBlock Text="{Binding Environment.Temperature}"
+                        <TextBlock Text="{Binding Environment.Temperature, StringFormat={}{0:F1} °C}"
                                    Grid.Column="1"/>
 
                     </Grid>
@@ -162,7 +162,7 @@
                         <TextBlock Grid.Column="0"
                                    Text="Humidity"/>
 
-                        <TextBlock Text="{Binding Environment.Humidity}"
+                        <TextBlock Text="{Binding Environment.Humidity,StringFormat={}{0:F0} %}"
                                    Grid.Column="1"/>
 
                     </Grid>
