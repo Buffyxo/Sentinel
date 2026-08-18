@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Id="Sentinel.Sentinel.Installer" Name="Installer" Manufacturer="Sentinel" Version="1.0.0">
+  <Package Id="Sentinel.Installer" Name="Sentinel" Manufacturer="Sentinel" Version="1.0.0">
     <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
 
     <Feature Id="Main">
